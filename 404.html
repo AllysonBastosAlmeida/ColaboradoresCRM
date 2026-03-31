@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <title>Redirecionando...</title>
+    <script>
+      // ✅ Pega o path COMPLETO, incluindo /ColaboradoresCRM
+      // Ex: /ColaboradoresCRM/colaboradores
+      var redirect = window.location.pathname;
+
+      // Salva a rota original
+      sessionStorage.setItem("redirect-path", redirect);
+
+      // Redireciona para o index do projeto
+      window.location.replace("/ColaboradoresCRM/index.html");
+    </script>
+  </head>
+  <body></body>
+</html>
